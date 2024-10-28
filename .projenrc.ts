@@ -2,15 +2,16 @@ import { awscdk, javascript } from 'projen';
 const project = new awscdk.AwsCdkConstructLibrary({
   author: 'yicr',
   authorAddress: 'yicr@users.noreply.github.com',
-  cdkVersion: '2.80.0',
+  authorOrganization: true,
+  cdkVersion: '2.156.0',
   typescriptVersion: '5.5.x',
   jsiiVersion: '5.5.x',
   defaultReleaseBranch: 'main',
   name: '@gammarers/aws-cloudfront-secure-static-website-distribution',
   projenrcTs: true,
   repositoryUrl: 'https://github.com/gammarers/aws-cloudfront-secure-static-website-distribution.git',
+  releaseToNpm: false,
   npmAccess: javascript.NpmAccess.PUBLIC,
-  majorVersion: 1,
   minNodeVersion: '18.0.0',
   workflowNodeVersion: '22.4.x',
   depsUpgradeOptions: {
